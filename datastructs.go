@@ -28,6 +28,7 @@ type Resource struct {
 	Uuid        string `json:"uuid"`
 	OrgId       string `json:"orgid" bson:"orgid,omitempty"`
 	Description string `json:"Description"`
+	Name        string `json:"Name"`
 	Protected   string `json:"Protected"`
 	Action      string `json:"Action"`
 	Address     string `json:"Address"`
