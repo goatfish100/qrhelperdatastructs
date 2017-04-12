@@ -37,6 +37,10 @@ type Resource struct {
 type JSONSuccess struct {
 	Success string `json:"success"`
 }
+type ResourceSuccess struct {
+	Success string `json:"success"`
+	Uuid    string `json:"uuid"`
+}
 
 type JSONFailure struct {
 	Failure string `json:"failure"`
