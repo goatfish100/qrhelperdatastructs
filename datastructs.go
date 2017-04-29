@@ -34,6 +34,8 @@ type Resource struct {
 	Address     string `json:"Address"`
 }
 
+type Resources []Resource
+
 type JSONSuccess struct {
 	Success string `json:"success"`
 }
