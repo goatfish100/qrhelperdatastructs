@@ -34,6 +34,7 @@ type Resource struct {
 	Protected   string        `json:"Protected"`
 	Action      string        `json:"Action"`
 	Address     string        `json:"Address"`
+	AccessCount int32         `json:"AccessCount"`
 }
 
 type Resources []Resource
