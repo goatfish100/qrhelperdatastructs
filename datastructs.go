@@ -5,16 +5,16 @@ import "gopkg.in/mgo.v2/bson"
 type Org struct {
 	//Id         string `json:"id" bson:"_id,omitempty"`
 	ID         bson.ObjectId `json:"id"        bson:"_id,omitempty"`
-	Orgname    string        `json:"orgname"`
+	Orgname    string        `json:"orgName"`
 	Address    string        `json:"address"`
 	City       string        `json:"city"`
 	State      string        `json:"state"`
-	Postalcode string        `json:"postalcode"`
+	Postalcode string        `json:"postalCode"`
 	Users      Users
 }
 
 type User struct {
-	Username string `json:"username"`
+	Username string `json:"userName"`
 	Email    string `json:"email"`
 	Name     string `json:"name"`
 	Password string `json:"password"`
@@ -28,13 +28,13 @@ type Resource struct {
 	ID          bson.ObjectId `json:"id"        bson:"_id,omitempty"`
 	Uuid        string        `json:"uuid"`
 	OrgId       string        `json:"orgid" bson:"orgid,omitempty"`
-	Description string        `json:"Description"`
-	Email       string        `json:"Email"`
-	Name        string        `json:"Name"`
-	Protected   string        `json:"Protected"`
-	Action      string        `json:"Action"`
-	Address     string        `json:"Address"`
-	Accesscount int64         `json:"Accesscount"`
+	Description string        `json:"description"`
+	Email       string        `json:"email"`
+	Name        string        `json:"name"`
+	Protected   string        `json:"protected"`
+	Action      string        `json:"action"`
+	Address     string        `json:"address"`
+	AccessCount int64         `json:"accessCount"`
 }
 
 type Resources []Resource
