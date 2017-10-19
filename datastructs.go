@@ -47,7 +47,6 @@ type Resource struct {
 	Description string        `json:"description"`
 	Email       string        `json:"email"`
 	Name        string        `json:"name"`
-	Protected   string        `json:"protected"`
 	Action      string        `json:"action"`
 	Address     string        `json:"address"`
 	AccessCount int64         `json:"accessCount"`
