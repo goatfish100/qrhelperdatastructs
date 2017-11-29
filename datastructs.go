@@ -36,9 +36,12 @@ type User struct {
 	Password string `json:"password"`
 }
 
+//Orgs a group or organizations
 type Orgs []Org
 
+//Users - a group of user
 type Users []User
+
 type Resource struct {
 	//ID          string `json:"id" bson:"_id,omitempty"`
 	ID          bson.ObjectId `json:"id"        bson:"_id,omitempty"`
